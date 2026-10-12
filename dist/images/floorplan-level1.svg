@@ -1,0 +1,155 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 650" width="100%" height="100%" style="background:#F8F6F1; font-family:'Plus Jakarta Sans',sans-serif;">
+  <defs>
+    <pattern id="gridPattern" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#E9E0D4" stroke-width="0.5"/>
+    </pattern>
+    <style>
+      .wall { stroke: #24231F; stroke-width: 3.5; fill: none; stroke-linecap: square; stroke-linejoin: miter; }
+      .inner-wall { stroke: #24231F; stroke-width: 2; fill: none; }
+      .window { stroke: #A58B69; stroke-width: 2; fill: #FFFFFF; fill-opacity: 0.7; }
+      .room-zone { fill: transparent; transition: fill 0.3s ease; cursor: pointer; }
+      .room-zone:hover { fill: rgba(165, 139, 105, 0.12); }
+      .room-zone.active { fill: rgba(165, 139, 105, 0.2); }
+      .label-title { font-size: 13px; font-weight: 600; letter-spacing: 0.12em; fill: #24231F; text-transform: uppercase; }
+      .label-sub { font-size: 11px; fill: #7A756D; letter-spacing: 0.05em; font-family: 'JetBrains Mono', monospace; }
+      .dim-line { stroke: #C8B9A5; stroke-width: 1; stroke-dasharray: 2 2; }
+      .dim-text { font-size: 10px; fill: #A58B69; font-family: 'JetBrains Mono', monospace; }
+      .door-arc { stroke: #A58B69; stroke-width: 1; stroke-dasharray: 2 2; fill: none; }
+      .hotspot { fill: #A58B69; cursor: pointer; transition: transform 0.2s ease, fill 0.2s ease; }
+      .hotspot:hover { fill: #24231F; transform: scale(1.2); }
+    </style>
+  </defs>
+
+  <!-- Background grid -->
+  <rect width="1000" height="650" fill="#F8F6F1"/>
+  <rect x="50" y="50" width="900" height="550" fill="url(#gridPattern)" opacity="0.6"/>
+
+  <!-- Compass Rose -->
+  <g transform="translate(910, 90)">
+    <circle cx="0" cy="0" r="22" fill="none" stroke="#C8B9A5" stroke-width="1"/>
+    <path d="M 0 -22 L 4 -4 L 0 0 L -4 -4 Z" fill="#24231F"/>
+    <path d="M 0 22 L 4 4 L 0 0 L -4 4 Z" fill="#C8B9A5"/>
+    <text x="0" y="-26" text-anchor="middle" font-size="10" font-weight="700" fill="#24231F">N</text>
+  </g>
+
+  <!-- Architectural Outer Boundary Level 01 -->
+  <!-- Grand Salon (Left & Center), Dining (Center-Right), Kitchen (Top Right), Guest Suites (Bottom) -->
+
+  <!-- ROOM ZONES (Interactive click/hover targets) -->
+  <!-- 1. Grand Salon -->
+  <g class="room-zone" data-room="salon" transform="translate(0,0)">
+    <rect x="90" y="90" width="460" height="290"/>
+    <text x="320" y="220" text-anchor="middle" class="label-title">GRAND SALON &amp; LIVING GALLERY</text>
+    <text x="320" y="240" text-anchor="middle" class="label-sub">14.20m × 8.80m · 125 m² · 3.4m CEILING</text>
+  </g>
+
+  <!-- 2. Dining Gallery -->
+  <g class="room-zone" data-room="dining">
+    <rect x="550" y="90" width="230" height="200"/>
+    <text x="665" y="185" text-anchor="middle" class="label-title">DINING SALON</text>
+    <text x="665" y="205" text-anchor="middle" class="label-sub">6.50m × 5.80m · 38 m²</text>
+  </g>
+
+  <!-- 3. Culinary Atelier / Kitchen -->
+  <g class="room-zone" data-room="kitchen">
+    <rect x="780" y="90" width="130" height="200"/>
+    <text x="845" y="185" text-anchor="middle" class="label-title">CHEF'S ATELIER</text>
+    <text x="845" y="205" text-anchor="middle" class="label-sub">4.2m × 5.8m · 24 m²</text>
+  </g>
+
+  <!-- 4. Private Elevator Foyer & Gallery Hall -->
+  <g class="room-zone" data-room="foyer">
+    <rect x="420" y="380" width="200" height="180"/>
+    <text x="520" y="465" text-anchor="middle" class="label-title">PRIVATE ELEVATOR FOYER</text>
+    <text x="520" y="485" text-anchor="middle" class="label-sub">DIRECT PENTHOUSE ACCESS</text>
+  </g>
+
+  <!-- 5. Guest Suite 01 -->
+  <g class="room-zone" data-room="guest1">
+    <rect x="90" y="380" width="330" height="180"/>
+    <text x="255" y="465" text-anchor="middle" class="label-title">GUEST RESIDENCE SUITE I</text>
+    <text x="255" y="485" text-anchor="middle" class="label-sub">7.20m × 5.20m · 37 m² · PRIVATE EN-SUITE</text>
+  </g>
+
+  <!-- 6. Guest Suite 02 -->
+  <g class="room-zone" data-room="guest2">
+    <rect x="620" y="290" width="290" height="270"/>
+    <text x="765" y="420" text-anchor="middle" class="label-title">GUEST RESIDENCE SUITE II</text>
+    <text x="765" y="440" text-anchor="middle" class="label-sub">6.80m × 5.40m · 36 m² · PRIVATE EN-SUITE</text>
+  </g>
+
+  <!-- WALLS & ARCHITECTURAL ELEMENTS -->
+  <!-- Outer Perimeter -->
+  <polygon points="90,90 910,90 910,560 90,560" class="wall"/>
+
+  <!-- Interior Partitions -->
+  <line x1="550" y1="90" x2="550" y2="380" class="inner-wall"/>
+  <line x1="780" y1="90" x2="780" y2="290" class="inner-wall"/>
+  <line x1="90" y1="380" x2="910" y2="380" class="inner-wall"/>
+  <line x1="420" y1="380" x2="420" y2="560" class="inner-wall"/>
+  <line x1="620" y1="290" x2="620" y2="560" class="inner-wall"/>
+  <line x1="550" y1="290" x2="910" y2="290" class="inner-wall"/>
+
+  <!-- Floor to Ceiling Glazing (Top and Left Facades) -->
+  <rect x="130" y="87" width="380" height="6" class="window"/>
+  <rect x="580" y="87" width="180" height="6" class="window"/>
+  <rect x="87" y="130" width="6" height="210" class="window"/>
+  <rect x="87" y="410" width="6" height="120" class="window"/>
+  <rect x="907" y="320" width="6" height="210" class="window"/>
+
+  <!-- Elevator Shaft Symbol -->
+  <g transform="translate(480, 400)">
+    <rect width="60" height="50" fill="#E9E0D4" stroke="#24231F" stroke-width="1.5"/>
+    <line x1="0" y1="0" x2="60" y2="50" stroke="#24231F" stroke-width="1"/>
+    <line x1="60" y1="0" x2="0" y2="50" stroke="#24231F" stroke-width="1"/>
+    <text x="30" y="65" text-anchor="middle" font-size="9" font-weight="600" fill="#24231F">LIFT</text>
+  </g>
+
+  <!-- Grand Travertine Fireplace in Salon -->
+  <rect x="92" y="200" width="14" height="70" fill="#C8B9A5" stroke="#24231F" stroke-width="1.5"/>
+
+  <!-- Marble Kitchen Island -->
+  <rect x="815" y="125" width="45" height="110" fill="#E9E0D4" stroke="#A58B69" stroke-width="1.5" rx="3"/>
+
+  <!-- Dining Table Representation -->
+  <rect x="615" y="140" width="90" height="40" fill="none" stroke="#C8B9A5" stroke-width="1" rx="4"/>
+
+  <!-- Interactive Hotspots with pulsing pin icons -->
+  <g class="hotspot" data-room="salon" transform="translate(230, 160)">
+    <circle cx="0" cy="0" r="10" fill="#A58B69"/>
+    <circle cx="0" cy="0" r="4" fill="#FFFFFF"/>
+    <text x="0" y="3" text-anchor="middle" font-size="8" fill="#FFFFFF" font-weight="bold">1</text>
+  </g>
+
+  <g class="hotspot" data-room="kitchen" transform="translate(835, 120)">
+    <circle cx="0" cy="0" r="10" fill="#A58B69"/>
+    <circle cx="0" cy="0" r="4" fill="#FFFFFF"/>
+    <text x="0" y="3" text-anchor="middle" font-size="8" fill="#FFFFFF" font-weight="bold">2</text>
+  </g>
+
+  <g class="hotspot" data-room="guest1" transform="translate(180, 420)">
+    <circle cx="0" cy="0" r="10" fill="#A58B69"/>
+    <circle cx="0" cy="0" r="4" fill="#FFFFFF"/>
+    <text x="0" y="3" text-anchor="middle" font-size="8" fill="#FFFFFF" font-weight="bold">3</text>
+  </g>
+
+  <!-- Architectural Scale Bar -->
+  <g transform="translate(90, 600)">
+    <text x="0" y="-8" font-size="10" letter-spacing="0.1em" fill="#7A756D">ARCHITECTURAL SCALE 1:100 (METERS)</text>
+    <line x1="0" y1="0" x2="200" y2="0" stroke="#24231F" stroke-width="2"/>
+    <line x1="0" y1="-4" x2="0" y2="4" stroke="#24231F" stroke-width="1.5"/>
+    <line x1="50" y1="-3" x2="50" y2="3" stroke="#24231F" stroke-width="1"/>
+    <line x1="100" y1="-4" x2="100" y2="4" stroke="#24231F" stroke-width="1.5"/>
+    <line x1="150" y1="-3" x2="150" y2="3" stroke="#24231F" stroke-width="1"/>
+    <line x1="200" y1="-4" x2="200" y2="4" stroke="#24231F" stroke-width="1.5"/>
+    <text x="0" y="14" font-size="9" fill="#24231F">0m</text>
+    <text x="100" y="14" font-size="9" fill="#24231F">5m</text>
+    <text x="200" y="14" font-size="9" fill="#24231F">10m</text>
+  </g>
+
+  <!-- Level 01 Title Badge -->
+  <g transform="translate(730, 600)">
+    <text x="180" y="-4" text-anchor="end" font-size="11" font-weight="600" letter-spacing="0.15em" fill="#24231F">LEVEL 01 · RECEPTION &amp; SUITES</text>
+    <text x="180" y="12" text-anchor="end" font-size="9" fill="#A58B69" font-family="'JetBrains Mono', monospace">TOTAL INTERIOR: 420.0 M² / 4,520 SQ FT</text>
+  </g>
+</svg>

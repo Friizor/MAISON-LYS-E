@@ -1,0 +1,1618 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MAISON ÉLYSÉE — An Exclusive Residential Offering | Paris VIII</title>
+  <meta name="description" content="Discover MAISON ÉLYSÉE, a peerless 680 m² private penthouse and sky residence situated in Paris' prestigious Golden Triangle. Contemporary European architecture, noble stone, and effortless luxury.">
+  <meta name="keywords" content="Maison Elysée, luxury real estate, Paris penthouse, Golden Triangle, Avenue Montaigne, architectural residence, private duplex, prime Paris property">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://maisonelysee.com/">
+  <meta property="og:title" content="MAISON ÉLYSÉE — An Exclusive Residential Offering">
+  <meta property="og:description" content="A peerless 680 m² private penthouse and sky residence situated in Paris' prestigious Golden Triangle. Contemporary European architecture and noble materiality.">
+  <meta property="og:image" content="/images/hero.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="MAISON ÉLYSÉE — An Exclusive Residential Offering">
+  <meta property="twitter:description" content="A peerless 680 m² private penthouse and sky residence in Paris' Golden Triangle.">
+  <meta property="twitter:image" content="/images/hero.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+  <!-- Google Fonts: Cormorant Garamond, Plus Jakarta Sans, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=JetBrains+Mono:wght@300;400;500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/src/style.css">
+
+  <!-- RealEstateListing Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "RealEstateListing",
+    "name": "MAISON ÉLYSÉE Penthouse & Garden Residence",
+    "description": "An exclusive 680 m² private duplex penthouse residence with 240 m² private landscaped sky terrace in the 8th Arrondissement, Paris.",
+    "url": "https://maisonelysee.com",
+    "image": "/images/hero.jpg",
+    "offers": {
+      "@type": "Offer",
+      "price": "24500000",
+      "priceCurrency": "EUR",
+      "availability": "https://schema.org/InStock",
+      "priceSpecification": {
+        "@type": "PriceSpecification",
+        "description": "Demonstration asking price. Price upon private application."
+      }
+    },
+    "containedInPlace": {
+      "@type": "Place",
+      "name": "Golden Triangle, 8th Arrondissement",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "18 Avenue Montaigne Adjacency",
+        "addressLocality": "Paris",
+        "postalCode": "75008",
+        "addressCountry": "FR"
+      }
+    }
+  }
+  </script>
+</head>
+<body class="bg-primary text-charcoal font-sans antialiased selection:bg-bronze selection:text-white">
+
+  <!-- Top Progress Bar -->
+  <div id="scrollProgressBar" class="scroll-progress-bar" aria-hidden="true"></div>
+
+  <!-- Accessibility Skip Link -->
+  <a href="#overview" class="skip-link">Skip to main content</a>
+
+  <!-- Floating Utility Preferences (Currency & Metric) -->
+  <aside class="quick-prefs-dock" aria-label="Regional display preferences">
+    <div class="pref-group">
+      <span class="pref-label">CURRENCY</span>
+      <button type="button" class="pref-btn active" data-currency-set="EUR" title="Display in Euros">EUR (€)</button>
+      <button type="button" class="pref-btn" data-currency-set="USD" title="Display in US Dollars">USD ($)</button>
+      <button type="button" class="pref-btn" data-currency-set="GBP" title="Display in British Pounds">GBP (£)</button>
+    </div>
+    <div class="pref-divider"></div>
+    <div class="pref-group">
+      <span class="pref-label">UNITS</span>
+      <button type="button" class="pref-btn active" data-unit-set="m2" title="Square Meters">M²</button>
+      <button type="button" class="pref-btn" data-unit-set="sqft" title="Square Feet">SQ FT</button>
+    </div>
+  </aside>
+
+  <!-- ========================================================================= -->
+  <!-- HEADER & NAVIGATION -->
+  <!-- ========================================================================= -->
+  <header id="siteHeader" class="site-header" role="banner">
+    <div class="header-container">
+      
+      <!-- Brand Wordmark -->
+      <a href="#" class="brand-link" aria-label="Maison Élysée Home">
+        <span class="brand-wordmark">MAISON ÉLYSÉE</span>
+        <span class="brand-subline">RÉSIDENCE PRIVÉE · PARIS VIII</span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-links-list">
+          <li><a href="#overview" class="nav-item">The Residence</a></li>
+          <li><a href="#architecture" class="nav-item">Architecture</a></li>
+          <li><a href="#gallery" class="nav-item">Gallery</a></li>
+          <li><a href="#amenities" class="nav-item">Amenities</a></li>
+          <li><a href="#floorplans" class="nav-item">Floor Plans</a></li>
+          <li><a href="#location" class="nav-item">Location</a></li>
+        </ul>
+      </nav>
+
+      <!-- Desktop Action CTA -->
+      <div class="header-actions">
+        <a href="#viewing" class="btn btn-outline-nav" id="headerViewingBtn">
+          <span>REQUEST A PRIVATE VIEWING</span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobileMenuToggle" class="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
+          <span class="menu-bar bar-top"></span>
+          <span class="menu-bar bar-bottom"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Fullscreen Navigation Drawer -->
+  <div id="mobileDrawer" class="mobile-drawer" aria-hidden="true">
+    <div class="mobile-drawer-inner">
+      <div class="mobile-drawer-header">
+        <span class="brand-wordmark">MAISON ÉLYSÉE</span>
+        <button id="mobileDrawerClose" class="drawer-close-btn" aria-label="Close menu">&times;</button>
+      </div>
+
+      <nav class="mobile-drawer-nav" aria-label="Mobile Navigation">
+        <ul class="mobile-nav-list">
+          <li><a href="#overview" class="mobile-nav-link"><span class="nav-num">01</span> The Residence</a></li>
+          <li><a href="#architecture" class="mobile-nav-link"><span class="nav-num">02</span> Architecture</a></li>
+          <li><a href="#gallery" class="mobile-nav-link"><span class="nav-num">03</span> Gallery</a></li>
+          <li><a href="#amenities" class="mobile-nav-link"><span class="nav-num">04</span> Amenities</a></li>
+          <li><a href="#floorplans" class="mobile-nav-link"><span class="nav-num">05</span> Floor Plans</a></li>
+          <li><a href="#location" class="mobile-nav-link"><span class="nav-num">06</span> Location</a></li>
+        </ul>
+      </nav>
+
+      <div class="mobile-drawer-footer">
+        <a href="#viewing" class="btn btn-primary w-full text-center" id="mobileDrawerCta">
+          REQUEST A PRIVATE VIEWING
+        </a>
+        <div class="mobile-contact-line">
+          <p class="text-caption">PRIVATE CLIENT DESK</p>
+          <a href="tel:+33142685018" class="text-phone">+33 (0)1 42 68 50 18</a>
+          <p class="text-sub">18 Avenue Montaigne Adjacency, 75008 Paris</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main id="mainContent">
+
+    <!-- ========================================================================= -->
+    <!-- 3. HERO SECTION — IMMEDIATE VISUAL IMPACT -->
+    <!-- ========================================================================= -->
+    <section id="hero" class="hero-section" aria-label="Introduction to Maison Élysée">
+      <div class="hero-media-wrapper">
+        <img 
+          src="/images/hero.jpg" 
+          alt="Maison Élysée architectural facade with French limestone, panoramic minimal glazing, and golden hour light" 
+          class="hero-media-img"
+          fetchpriority="high"
+          width="2400"
+          height="1350"
+        >
+        <div class="hero-gradient-overlay" aria-hidden="true"></div>
+      </div>
+
+      <div class="hero-content-container">
+        
+        <div class="hero-text-block">
+          <div class="hero-eyebrow fade-in-element">
+            <span class="eyebrow-line"></span>
+            <span class="eyebrow-text">AN EXCLUSIVE RESIDENTIAL OFFERING</span>
+          </div>
+
+          <h1 class="hero-headline fade-in-element delay-1">
+            A More Beautiful Way to Live.
+          </h1>
+
+          <p class="hero-supporting-text fade-in-element delay-2">
+            Discover a residence where thoughtful architecture, natural materials, and exceptional living come together.
+          </p>
+
+          <div class="hero-cta-group fade-in-element delay-3">
+            <a href="#overview" class="btn btn-hero-primary" id="heroExploreBtn">
+              <span>EXPLORE THE RESIDENCE</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" class="btn-arrow" aria-hidden="true"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+            </a>
+            <a href="#viewing" class="btn btn-hero-secondary" id="heroViewingBtn">
+              <span>REQUEST A PRIVATE VIEWING</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Bottom Editorial Indicators -->
+        <div class="hero-bottom-bar fade-in-element delay-4">
+          <div class="hero-location-pill">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/></svg>
+            <span>PARIS VIII · GOLDEN TRIANGLE</span>
+          </div>
+
+          <div class="hero-specs-pill">
+            <span data-unit-val="interior">680 M²</span>
+            <span class="pill-dot">·</span>
+            <span>5 SUITES</span>
+            <span class="pill-dot">·</span>
+            <span data-unit-val="terrace">240 M² SKY TERRACE</span>
+          </div>
+
+          <a href="#overview" class="hero-scroll-indicator" aria-label="Scroll to property overview">
+            <span class="scroll-label">SCROLL TO DISCOVER</span>
+            <span class="scroll-line-container">
+              <span class="scroll-line-pulse"></span>
+            </span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 4. PROPERTY OVERVIEW -->
+    <!-- ========================================================================= -->
+    <section id="overview" class="section overview-section" aria-labelledby="overviewTitle">
+      <div class="section-container">
+        
+        <!-- Section Marker -->
+        <div class="section-marker">
+          <span class="marker-number">01</span>
+          <span class="marker-rule"></span>
+          <span class="marker-title">THE RESIDENCE</span>
+        </div>
+
+        <!-- Asymmetric Two-Column Editorial Intro -->
+        <div class="overview-grid">
+          
+          <div class="overview-left-col reveal-on-scroll">
+            <span class="editorial-kicker">EDITORIAL OVERVIEW</span>
+            <h2 id="overviewTitle" class="editorial-headline">
+              Designed Around the Art of Living.
+            </h2>
+            <div class="pull-quote-wrapper">
+              <blockquote class="editorial-pull-quote">
+                “True luxury is not an accumulation of ornament; it is the quiet harmony of scale, honest materiality, and unencumbered natural light.”
+              </blockquote>
+              <cite class="quote-citation">— Studio d'Architecture Élysée, Paris</cite>
+            </div>
+          </div>
+
+          <div class="overview-right-col reveal-on-scroll delay-1">
+            <p class="body-lead">
+              Conceived as a private sanctuary above the prestigious boulevards of Paris’ 8th Arrondissement, MAISON ÉLYSÉE redefines residential grandeur through European warm minimalism. Every axis has been calculated to celebrate light and tranquility, establishing a seamless continuum between monumental interior proportions and verdant outdoor loggias.
+            </p>
+            <p class="body-text">
+              The residence is articulated across two luminous levels, highlighted by a 14-meter double-height reception salon, bespoke Fior di Bosco marble culinary atelier, and a primary penthouse suite opening onto an expansive private sky terrace landscaped by the celebrated Piet Oudolf studio.
+            </p>
+            <p class="body-text">
+              From hand-honed Roman travertine to European smoked oak joinery and acoustically decoupled floor plates, each detail has been curated to provide absolute privacy, acoustic stillness, and timeless architectural grace.
+            </p>
+
+            <div class="curator-signature">
+              <div class="signature-line"></div>
+              <div class="signature-text">
+                <span class="signature-name">Henri de Montmirail</span>
+                <span class="signature-title">Director of Private Acquisitions</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Elegant Property Information Strip -->
+        <div class="property-info-strip reveal-on-scroll delay-2" role="region" aria-label="Key Property Specifications">
+          <div class="info-strip-card">
+            <span class="strip-label">PROPERTY TYPE</span>
+            <span class="strip-value">Duplex Penthouse &amp; Garden Pavilion</span>
+            <span class="strip-sub">Private Biometric Lift</span>
+          </div>
+
+          <div class="info-strip-card">
+            <span class="strip-label">ACCOMMODATIONS</span>
+            <span class="strip-value">5 Master Suites</span>
+            <span class="strip-sub">6 Custom Stone Bathrooms</span>
+          </div>
+
+          <div class="info-strip-card">
+            <span class="strip-label">INTERIOR LIVING AREA</span>
+            <span class="strip-value" data-unit-text="interior">680 m²</span>
+            <span class="strip-sub" data-unit-alt="interior">7,320 sq ft gross</span>
+          </div>
+
+          <div class="info-strip-card">
+            <span class="strip-label">OUTDOOR SPACE</span>
+            <span class="strip-value" data-unit-text="terrace">240 m²</span>
+            <span class="strip-sub" data-unit-alt="terrace">Private Sky Terrace &amp; Pool</span>
+          </div>
+
+          <div class="info-strip-card">
+            <span class="strip-label">LOCATION</span>
+            <span class="strip-value">Paris VIII</span>
+            <span class="strip-sub">Golden Triangle / Montaigne</span>
+          </div>
+
+          <div class="info-strip-card highlight-price">
+            <span class="strip-label">DEMONSTRATION OFFERING</span>
+            <span class="strip-value price-display" data-price-text>€24,500,000</span>
+            <span class="strip-sub">Price Upon Private Application</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 5. ARCHITECTURAL STORYTELLING -->
+    <!-- ========================================================================= -->
+    <section id="architecture" class="section architecture-section" aria-labelledby="archTitle">
+      <div class="section-container">
+        
+        <!-- Section Marker -->
+        <div class="section-marker">
+          <span class="marker-number">02</span>
+          <span class="marker-rule"></span>
+          <span class="marker-title">ARCHITECTURAL PHILOSOPHY</span>
+        </div>
+
+        <div class="architecture-header reveal-on-scroll">
+          <span class="editorial-kicker">DESIGN PHILOSOPHY</span>
+          <h2 id="archTitle" class="editorial-headline max-w-3xl">
+            Architecture That Feels Effortless.
+          </h2>
+          <p class="body-lead max-w-2xl">
+            Proportion, light, materiality, privacy, and functionality define every square meter of MAISON ÉLYSÉE. Nothing is accidental; nothing is superfluous.
+          </p>
+        </div>
+
+        <!-- Asymmetric Editorial Grid (Magazine Style) -->
+        <div class="editorial-story-grid">
+          
+          <!-- Large Architecture Feature Image -->
+          <div class="story-item story-large-img reveal-on-scroll">
+            <div class="image-frame">
+              <img 
+                src="/images/editorial-story-1.jpg" 
+                alt="Monolithic limestone portico framing floor-to-ceiling minimal glazing and natural daylight"
+                class="story-img"
+                loading="lazy"
+                width="1800"
+                height="1200"
+              >
+            </div>
+            <figcaption class="editorial-caption">
+              <span class="fig-num">FIG. 01</span>
+              <span>Monolithic limestone colonnades framing custom floor-to-ceiling minimal glazing, engineered to harness shifting Parisian daylight throughout all seasons.</span>
+            </figcaption>
+          </div>
+
+          <!-- Contrasting Text Block 01 -->
+          <div class="story-item story-text-card reveal-on-scroll delay-1">
+            <div class="pillar-marker">01 / ORIENTATION &amp; LIGHT</div>
+            <h3 class="pillar-title">Sculpting Space with Natural Radiance</h3>
+            <p class="pillar-text">
+              The building's orientation was mathematically optimized to capture daylight along the South and South-West arcs. Floor-to-ceiling Schuco triple-paned minimal glass apertures span up to 4.10 meters high, flooding the primary reception halls with golden luminosity while ensuring certified acoustic insulation (48 dB reduction).
+            </p>
+            <div class="pillar-metric">
+              <span class="metric-num">3.4m – 4.1m</span>
+              <span class="metric-desc">Uninterrupted Ceiling Clearances</span>
+            </div>
+          </div>
+
+          <!-- Detail Photograph -->
+          <div class="story-item story-detail-img reveal-on-scroll">
+            <div class="image-frame">
+              <img 
+                src="/images/editorial-story-2.jpg" 
+                alt="Architectural detail highlighting honed travertine stone, brushed bronze joinery, and European white oak"
+                class="story-img"
+                loading="lazy"
+                width="1800"
+                height="1200"
+              >
+            </div>
+            <figcaption class="editorial-caption">
+              <span class="fig-num">FIG. 02</span>
+              <span>Detail of hand-brushed patinated bronze hardware intersecting seamlessly with honed Roman travertine and quarter-sawn white oak cabinetry.</span>
+            </figcaption>
+          </div>
+
+          <!-- Contrasting Text Block 02 -->
+          <div class="story-item story-text-card reveal-on-scroll delay-1">
+            <div class="pillar-marker">02 / HONEST MATERIALITY</div>
+            <h3 class="pillar-title">Noble Textures That Age with Dignity</h3>
+            <p class="pillar-text">
+              We eliminated artificial veneers in favor of tactile honesty: Roman travertine extracted from historically preserved quarries in Tivoli, bookmatched Calacatta Borghini marble, smoked European white oak floors, and custom architectural bronze fittings patinated by Parisian artisans.
+            </p>
+            <div class="pillar-metric">
+              <span class="metric-num">100%</span>
+              <span class="metric-desc">Authentic Natural &amp; Sustainable Stones</span>
+            </div>
+          </div>
+
+          <!-- Contrasting Text Block 03 -->
+          <div class="story-item story-text-card span-two-col reveal-on-scroll delay-2">
+            <div class="pillar-marker">03 / ACOUSTIC SANCTUARY &amp; INTIMACY</div>
+            <div class="two-col-inner">
+              <div>
+                <h3 class="pillar-title">A Silent Retreat in the Heart of the Capital</h3>
+                <p class="pillar-text">
+                  In a vibrant metropolis, true luxury is profound stillness. Floating slab foundations, acoustic decoupling membranes, and concealed magnetic door seals isolate the private chambers from any ambient vibration or sound.
+                </p>
+              </div>
+              <div>
+                <p class="pillar-text">
+                  The primary penthouse level is accessible only through a private biometric elevator, ensuring seamless, unobserved entry directly into your private foyer.
+                </p>
+                <div class="pillar-metric mt-4">
+                  <span class="metric-num">Class A</span>
+                  <span class="metric-desc">BREEAM Excellent &amp; Acoustic Excellence</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 6. PREMIUM INTERACTIVE PHOTO GALLERY -->
+    <!-- ========================================================================= -->
+    <section id="gallery" class="section gallery-section" aria-labelledby="galleryTitle">
+      <div class="section-container">
+        
+        <!-- Section Marker -->
+        <div class="section-marker">
+          <span class="marker-number">03</span>
+          <span class="marker-rule"></span>
+          <span class="marker-title">CURATED GALLERY</span>
+        </div>
+
+        <div class="gallery-header-row reveal-on-scroll">
+          <div>
+            <span class="editorial-kicker">PROPERTY PORTFOLIO</span>
+            <h2 id="galleryTitle" class="editorial-headline">
+              A Visual Exploration.
+            </h2>
+          </div>
+
+          <!-- Gallery Filter Buttons -->
+          <div class="gallery-filter-tabs" role="tablist" aria-label="Filter gallery images">
+            <button class="filter-tab active" data-filter="all" role="tab" aria-selected="true">All Perspectives (12)</button>
+            <button class="filter-tab" data-filter="architecture" role="tab" aria-selected="false">Architecture</button>
+            <button class="filter-tab" data-filter="living" role="tab" aria-selected="false">Living &amp; Dining</button>
+            <button class="filter-tab" data-filter="suites" role="tab" aria-selected="false">Private Suites</button>
+            <button class="filter-tab" data-filter="terrace" role="tab" aria-selected="false">Terraces &amp; Grounds</button>
+          </div>
+        </div>
+
+        <!-- Gallery Editorial Grid -->
+        <div class="gallery-masonry-grid" id="galleryGrid" role="region" aria-label="Property photographs">
+          
+          <!-- Image 01: Exterior Facade -->
+          <div class="gallery-card card-wide" data-category="architecture" data-index="0">
+            <div class="gallery-card-inner">
+              <img src="/images/gallery-facade.jpg" alt="Maison Élysée exterior facade view from private landscaped grounds" loading="lazy">
+              <div class="gallery-card-overlay">
+                <div class="gallery-card-meta">
+                  <span class="card-tag">ARCHITECTURE</span>
+                  <h3 class="card-title">Limestone Facade &amp; Private Grounds</h3>
+                </div>
+                <button class="gallery-open-btn" aria-label="Open image in fullscreen viewer">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                </button>
+              </div>
+            </div>
+            <span class="gallery-card-counter">01 / 12</span>
+          </div>
+
+          <!-- Image 02: Main Living Salon -->
+          <div class="gallery-card card-tall" data-category="living" data-index="1">
+            <div class="gallery-card-inner">
+              <img src="/images/gallery-living.jpg" alt="Double-height Grand Salon with travertine fireplace and contemporary furnishings" loading="lazy">
+              <div class="gallery-card-overlay">
+                <div class="gallery-card-meta">
+                  <span class="card-tag">LIVING &amp; RECEPTION</span>
+                  <h3 class="card-title">Grand Salon &amp; Travertine Hearth</h3>
+                </div>
+                <button class="gallery-open-btn" aria-label="Open image in fullscreen viewer">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                </button>
+              </div>
+            </div>
+            <span class="gallery-card-counter">02 / 12</span>
+          </div>
+
+          <!-- Image 03: Culinary Atelier -->
+          <div class="gallery-card card-regular" data-category="living" data-index="2">
+            <div class="gallery-card-inner">
+              <img src="/images/gallery-kitchen.jpg" alt="Bespoke Boffi marble kitchen with Gaggenau appliances and minimalist joinery" loading="lazy">
+              <div class="gallery-card-overlay">
+                <div class="gallery-card-meta">
+                  <span class="card-tag">CULINARY ATELIER</span>
+                  <h3 class="card-title">Monolithic Marble Chef's Kitchen</h3>
+                </div>
+                <button class="gallery-open-btn" aria-label="Open image in fullscreen viewer">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                </button>
+              </div>
+            </div>
+            <span class="gallery-card-counter">03 / 12</span>
+          </div>
+
+          <!-- Image 04: Primary Penthouse Bedroom -->
+          <div class="gallery-card card-tall" data-category="suites" data-index="3">
+            <div class="gallery-card-inner">
+              <img src="/images/gallery-bedroom.jpg" alt="Primary master penthouse suite with warm linen drapery and terrace access" loading="lazy">
+              <div class="gallery-card-overlay">
+                <div class="gallery-card-meta">
+                  <span class="card-tag">PRIVATE SUITES</span>
+                  <h3 class="card-title">Primary Penthouse Suite</h3>
+                </div>
+                <button class="gallery-open-btn" aria-label="Open image in fullscreen viewer">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                </button>
+              </div>
+            </div>
+            <span class="gallery-card-counter">04 / 12</span>
+          </div>
+
+          <!-- Image 05: Master Bathroom Spa -->
+          <div class="gallery-card card-regular" data-category="suites" data-index="4">
+            <div class="gallery-card-inner">
+              <img src="/images/gallery-bathroom.jpg" alt="Luxury en-suite bathroom with sculptural freestanding stone tub and natural stone finishes" loading="lazy">
+              <div class="gallery-card-overlay">
+                <div class="gallery-card-meta">
+                  <span class="card-tag">WELLNESS SPA</span>
+                  <h3 class="card-title">Primary En-Suite Spa &amp; Stone Tub</h3>
+                </div>
+                <button class="gallery-open-btn" aria-label="Open image in fullscreen viewer">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                </button>
+              </div>
+            </div>
+            <span class="gallery-card-counter">05 / 12</span>
+          </div>
+
+          <!-- Image 06: Private Sky Terrace -->
+          <div class="gallery-card card-wide" data-category="terrace" data-index="5">
+            <div class="gallery-card-inner">
+              <img src="/images/gallery-terrace.jpg" alt="240 m² private sky terrace with lounge seating and heated plunge pool" loading="lazy">
+              <div class="gallery-card-overlay">
+                <div class="gallery-card-meta">
+                  <span class="card-tag">OUTDOOR LIVING</span>
+                  <h3 class="card-title">Private Sky Terrace &amp; Sunset Loggia</h3>
+                </div>
+                <button class="gallery-open-btn" aria-label="Open image in fullscreen viewer">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                </button>
+              </div>
+            </div>
+            <span class="gallery-card-counter">06 / 12</span>
+          </div>
+
+          <!-- Image 07: Formal Dining Salon -->
+          <div class="gallery-card card-regular" data-category="living" data-index="6">
+            <div class="gallery-card-inner">
+              <img src="/images/gallery-dining.jpg" alt="Editorial dining room with solid oak table and architectural lighting" loading="lazy">
+              <div class="gallery-card-overlay">
+                <div class="gallery-card-meta">
+                  <span class="card-tag">LIVING &amp; RECEPTION</span>
+                  <h3 class="card-title">Intimate Formal Dining Salon</h3>
+                </div>
+                <button class="gallery-open-btn" aria-label="Open image in fullscreen viewer">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                </button>
+              </div>
+            </div>
+            <span class="gallery-card-counter">07 / 12</span>
+          </div>
+
+          <!-- Image 08: Craftsmanship & Detail -->
+          <div class="gallery-card card-regular" data-category="architecture" data-index="7">
+            <div class="gallery-card-inner">
+              <img src="/images/gallery-details.jpg" alt="Macro detail of architectural joinery, stone, and bronze fittings" loading="lazy">
+              <div class="gallery-card-overlay">
+                <div class="gallery-card-meta">
+                  <span class="card-tag">CRAFTSMANSHIP</span>
+                  <h3 class="card-title">Bespoke Millwork &amp; Stone Joints</h3>
+                </div>
+                <button class="gallery-open-btn" aria-label="Open image in fullscreen viewer">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                </button>
+              </div>
+            </div>
+            <span class="gallery-card-counter">08 / 12</span>
+          </div>
+
+          <!-- Image 09: Landscaped Garden -->
+          <div class="gallery-card card-regular" data-category="terrace" data-index="8">
+            <div class="gallery-card-inner">
+              <img src="/images/gallery-garden.jpg" alt="Landscaped private courtyard garden with reflective water basin" loading="lazy">
+              <div class="gallery-card-overlay">
+                <div class="gallery-card-meta">
+                  <span class="card-tag">TERRACE &amp; GROUNDS</span>
+                  <h3 class="card-title">Private Reflexion Courtyard</h3>
+                </div>
+                <button class="gallery-open-btn" aria-label="Open image in fullscreen viewer">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                </button>
+              </div>
+            </div>
+            <span class="gallery-card-counter">09 / 12</span>
+          </div>
+
+          <!-- Image 10: Architectural Glazing -->
+          <div class="gallery-card card-tall" data-category="architecture" data-index="9">
+            <div class="gallery-card-inner">
+              <img src="/images/editorial-story-1.jpg" alt="Double-height architectural glazing reflecting morning sky" loading="lazy">
+              <div class="gallery-card-overlay">
+                <div class="gallery-card-meta">
+                  <span class="card-tag">ARCHITECTURE</span>
+                  <h3 class="card-title">Double-Height Glazing Facade</h3>
+                </div>
+                <button class="gallery-open-btn" aria-label="Open image in fullscreen viewer">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                </button>
+              </div>
+            </div>
+            <span class="gallery-card-counter">10 / 12</span>
+          </div>
+
+          <!-- Image 11: Guest Suite Sanctuary -->
+          <div class="gallery-card card-regular" data-category="suites" data-index="10">
+            <div class="gallery-card-inner">
+              <img src="/images/editorial-story-2.jpg" alt="Guest suite architectural millwork and integrated lighting" loading="lazy">
+              <div class="gallery-card-overlay">
+                <div class="gallery-card-meta">
+                  <span class="card-tag">PRIVATE SUITES</span>
+                  <h3 class="card-title">Guest Suite Finishings</h3>
+                </div>
+                <button class="gallery-open-btn" aria-label="Open image in fullscreen viewer">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                </button>
+              </div>
+            </div>
+            <span class="gallery-card-counter">11 / 12</span>
+          </div>
+
+          <!-- Image 12: Twilight Façade -->
+          <div class="gallery-card card-wide" data-category="terrace" data-index="11">
+            <div class="gallery-card-inner">
+              <img src="/images/cta-closing.jpg" alt="Twilight architectural illumination across the terrace and glass pavilions" loading="lazy">
+              <div class="gallery-card-overlay">
+                <div class="gallery-card-meta">
+                  <span class="card-tag">OUTDOOR LIVING</span>
+                  <h3 class="card-title">Twilight Pavilions &amp; Sky Lounge</h3>
+                </div>
+                <button class="gallery-open-btn" aria-label="Open image in fullscreen viewer">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                </button>
+              </div>
+            </div>
+            <span class="gallery-card-counter">12 / 12</span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Fullscreen Lightbox Modal -->
+    <div id="galleryLightbox" class="lightbox-modal" role="dialog" aria-modal="true" aria-label="Property Image Lightbox" aria-hidden="true">
+      <div class="lightbox-backdrop"></div>
+      
+      <div class="lightbox-container">
+        <!-- Top Controls Bar -->
+        <div class="lightbox-top-bar">
+          <div class="lightbox-info">
+            <span id="lightboxCounter" class="lightbox-counter">01 / 12</span>
+            <span class="lightbox-divider">|</span>
+            <span id="lightboxCategory" class="lightbox-category">ARCHITECTURE</span>
+            <span class="lightbox-divider">|</span>
+            <h2 id="lightboxTitle" class="lightbox-title">Limestone Facade &amp; Private Grounds</h2>
+          </div>
+          
+          <div class="lightbox-actions">
+            <button id="lightboxPrevBtn" class="lightbox-nav-btn" aria-label="Previous image" title="Previous (Left Arrow)">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            </button>
+            <button id="lightboxNextBtn" class="lightbox-nav-btn" aria-label="Next image" title="Next (Right Arrow)">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+            <button id="lightboxCloseBtn" class="lightbox-close-btn" aria-label="Close viewer" title="Close (Esc)">&times;</button>
+          </div>
+        </div>
+
+        <!-- Center Image Viewport -->
+        <div class="lightbox-stage">
+          <img id="lightboxImg" src="" alt="" class="lightbox-main-img">
+        </div>
+
+        <!-- Bottom Caption & Thumbnail Strip -->
+        <div class="lightbox-bottom-bar">
+          <p id="lightboxCaption" class="lightbox-caption-text">
+            Monolithic limestone colonnades framing custom floor-to-ceiling minimal glazing.
+          </p>
+          <div class="lightbox-thumbnails" id="lightboxThumbStrip">
+            <!-- Populated dynamically via JS -->
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ========================================================================= -->
+    <!-- 7. FEATURES AND AMENITIES -->
+    <!-- ========================================================================= -->
+    <section id="amenities" class="section amenities-section" aria-labelledby="amenitiesTitle">
+      <div class="section-container">
+        
+        <!-- Section Marker -->
+        <div class="section-marker">
+          <span class="marker-number">04</span>
+          <span class="marker-rule"></span>
+          <span class="marker-title">SPECIFICATIONS</span>
+        </div>
+
+        <div class="amenities-header reveal-on-scroll">
+          <span class="editorial-kicker">CURATED DISTINCTIONS</span>
+          <h2 id="amenitiesTitle" class="editorial-headline max-w-3xl">
+            Distinguishing Features.
+          </h2>
+          <p class="body-lead max-w-2xl">
+            Every technical specification has been selected to ensure peerless comfort, environmental integrity, and effortless everyday living.
+          </p>
+        </div>
+
+        <!-- Minimalist Features Grid -->
+        <div class="amenities-grid">
+          
+          <div class="amenity-card reveal-on-scroll">
+            <div class="amenity-icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 12h18M12 3v18"/></svg>
+            </div>
+            <div class="amenity-num">01</div>
+            <h3 class="amenity-title">Floor-to-Ceiling Schuco Glazing</h3>
+            <p class="amenity-desc">Triple-glazed German acoustic minimal facades up to 4.10m high, engineered for exceptional solar control and 48 dB acoustic noise reduction.</p>
+          </div>
+
+          <div class="amenity-card reveal-on-scroll delay-1">
+            <div class="amenity-icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <div class="amenity-num">02</div>
+            <h3 class="amenity-title">Hand-Honed Roman Travertine</h3>
+            <p class="amenity-desc">Monolithic stone selected from centuries-old Tivoli quarries, hand-honed and sealed with matte breathable micro-polymers.</p>
+          </div>
+
+          <div class="amenity-card reveal-on-scroll delay-2">
+            <div class="amenity-icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10M6 10h10M6 14h6"/></svg>
+            </div>
+            <div class="amenity-num">03</div>
+            <h3 class="amenity-title">Bespoke Boffi &amp; Gaggenau Kitchen</h3>
+            <p class="amenity-desc">Custom Fior di Bosco monolithic marble island, Gaggenau 400 Series ovens, full-height Sub-Zero wine storage with dual humidity zones.</p>
+          </div>
+
+          <div class="amenity-card reveal-on-scroll">
+            <div class="amenity-icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12h20M7 19l5-5 5 5M7 5l5 5 5-5"/></svg>
+            </div>
+            <div class="amenity-num">04</div>
+            <h3 class="amenity-title">240 m² Landscaped Sky Terrace</h3>
+            <p class="amenity-desc">Designed by Piet Oudolf Studio featuring drought-resilient Mediterranean olive trees, heated infinity plunge pool, and automatic micro-irrigation.</p>
+          </div>
+
+          <div class="amenity-card reveal-on-scroll delay-1">
+            <div class="amenity-icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+            </div>
+            <div class="amenity-num">05</div>
+            <h3 class="amenity-title">Bio-Climate &amp; HEPA Air Filtration</h3>
+            <p class="amenity-desc">Silent geothermal radiant floor heating, four-pipe zoned VRF cooling, and continuous hospital-grade air purification refresh cycles.</p>
+          </div>
+
+          <div class="amenity-card reveal-on-scroll delay-2">
+            <div class="amenity-icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+            </div>
+            <div class="amenity-num">06</div>
+            <h3 class="amenity-title">Private 3-Vehicle Secure Garage</h3>
+            <p class="amenity-desc">Subterranean climate-controlled garage with 22kW rapid EV chargers and direct private biometric lift access to both penthouse floors.</p>
+          </div>
+
+          <div class="amenity-card reveal-on-scroll">
+            <div class="amenity-icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <div class="amenity-num">07</div>
+            <h3 class="amenity-title">Wellness Spa &amp; Finnish Sauna</h3>
+            <p class="amenity-desc">Private cedar dry sauna, marble steam hammam, custom cold hydrotherapy basin, and massage treatment salon.</p>
+          </div>
+
+          <div class="amenity-card reveal-on-scroll delay-1">
+            <div class="amenity-icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div class="amenity-num">08</div>
+            <h3 class="amenity-title">24/7 White-Glove Concierge</h3>
+            <p class="amenity-desc">Dedicated residential superintendent, discreet perimeter security, package courier vaults, and on-demand sommelier reservation desk.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 8. LOCATION AND NEIGHBORHOOD -->
+    <!-- ========================================================================= -->
+    <section id="location" class="section location-section" aria-labelledby="locationTitle">
+      <div class="section-container">
+        
+        <!-- Section Marker -->
+        <div class="section-marker">
+          <span class="marker-number">05</span>
+          <span class="marker-rule"></span>
+          <span class="marker-title">ENVIRONS</span>
+        </div>
+
+        <div class="location-header reveal-on-scroll">
+          <span class="editorial-kicker">PARIS VIII · TRIANGLE D'OR</span>
+          <h2 id="locationTitle" class="editorial-headline max-w-3xl">
+            An Exceptional Address.
+          </h2>
+          <p class="body-lead max-w-2xl">
+            Positioned moments from the haute couture salons of Avenue Montaigne and the historic grandeur of the Grand Palais, MAISON ÉLYSÉE commands an unrivaled presence in Paris' most celebrated quarter.
+          </p>
+        </div>
+
+        <!-- Asymmetric Location Grid -->
+        <div class="location-grid">
+          
+          <!-- Atmospheric Street & Architecture Image -->
+          <div class="location-visual reveal-on-scroll">
+            <div class="location-img-wrap">
+              <img 
+                src="/images/location-neighborhood.jpg" 
+                alt="Haussmannian boulevards, lush avenues, and classical Parisian architecture near Avenue Montaigne"
+                class="location-img"
+                loading="lazy"
+                width="1800"
+                height="1200"
+              >
+              <div class="location-badge-overlay">
+                <span class="loc-code">PARIS VIII</span>
+                <span class="loc-address">Avenue Montaigne Adjacency, 75008</span>
+                <span class="loc-coords">48.8661° N · 2.3082° E</span>
+              </div>
+            </div>
+            
+            <div class="location-lifestyle-quote">
+              <p>“To live in the Golden Triangle is to be enveloped by culture, haute cuisine, and architectural mastery at your doorstep, while retaining complete domestic seclusion.”</p>
+            </div>
+          </div>
+
+          <!-- Location Information & Interactive Neighborhood Directory -->
+          <div class="location-directory reveal-on-scroll delay-1">
+            
+            <div class="directory-tabs-header">
+              <span class="dir-title">NEIGHBORHOOD DIRECTORY</span>
+              <div class="dir-category-filters" role="tablist" aria-label="Location categories">
+                <button class="dir-tab active" data-loc-filter="all" role="tab" aria-selected="true">All (12)</button>
+                <button class="dir-tab" data-loc-filter="culture" role="tab" aria-selected="false">Culture</button>
+                <button class="dir-tab" data-loc-filter="dining" role="tab" aria-selected="false">Dining</button>
+                <button class="dir-tab" data-loc-filter="shopping" role="tab" aria-selected="false">Couture</button>
+                <button class="dir-tab" data-loc-filter="parks" role="tab" aria-selected="false">Parks &amp; Transit</button>
+              </div>
+            </div>
+
+            <!-- Directory Items List -->
+            <div class="directory-items-list" id="directoryList">
+              
+              <div class="dir-item" data-category="shopping">
+                <div class="dir-item-left">
+                  <span class="dir-category-tag">HAUTE COUTURE</span>
+                  <h3 class="dir-name">Avenue Montaigne Flagships</h3>
+                  <p class="dir-desc">Dior House of Dreams, Chanel, Celine, and Saint Laurent boutiques.</p>
+                </div>
+                <div class="dir-item-time">
+                  <span class="time-num">2 MIN</span>
+                  <span class="time-type">WALK</span>
+                </div>
+              </div>
+
+              <div class="dir-item" data-category="dining">
+                <div class="dir-item-left">
+                  <span class="dir-category-tag">FINE DINING</span>
+                  <h3 class="dir-name">Hôtel Plaza Athénée</h3>
+                  <p class="dir-desc">Gastronomic salon by Chef Jean Imbert and Cour Jardin terrace.</p>
+                </div>
+                <div class="dir-item-time">
+                  <span class="time-num">3 MIN</span>
+                  <span class="time-type">WALK</span>
+                </div>
+              </div>
+
+              <div class="dir-item" data-category="culture">
+                <div class="dir-item-left">
+                  <span class="dir-category-tag">CULTURE &amp; ARTS</span>
+                  <h3 class="dir-name">Grand Palais &amp; Petit Palais</h3>
+                  <p class="dir-desc">Historic glass-domed art exposition halls and botanical courtyards.</p>
+                </div>
+                <div class="dir-item-time">
+                  <span class="time-num">5 MIN</span>
+                  <span class="time-type">WALK</span>
+                </div>
+              </div>
+
+              <div class="dir-item" data-category="shopping">
+                <div class="dir-item-left">
+                  <span class="dir-category-tag">HAUTE COUTURE</span>
+                  <h3 class="dir-name">Rue du Faubourg Saint-Honoré</h3>
+                  <p class="dir-desc">Hermès global flagship, fine jewelers, and private art galleries.</p>
+                </div>
+                <div class="dir-item-time">
+                  <span class="time-num">6 MIN</span>
+                  <span class="time-type">WALK</span>
+                </div>
+              </div>
+
+              <div class="dir-item" data-category="dining">
+                <div class="dir-item-left">
+                  <span class="dir-category-tag">FINE DINING</span>
+                  <h3 class="dir-name">Le Gabriel (La Réserve Paris)</h3>
+                  <p class="dir-desc">Three Michelin-starred culinary excellence overseen by Jérôme Banctel.</p>
+                </div>
+                <div class="dir-item-time">
+                  <span class="time-num">6 MIN</span>
+                  <span class="time-type">WALK</span>
+                </div>
+              </div>
+
+              <div class="dir-item" data-category="culture">
+                <div class="dir-item-left">
+                  <span class="dir-category-tag">CULTURE &amp; ARTS</span>
+                  <h3 class="dir-name">Musée d'Art Moderne &amp; Palais de Tokyo</h3>
+                  <p class="dir-desc">Contemporary European modern collections overlooking the Seine riverbanks.</p>
+                </div>
+                <div class="dir-item-time">
+                  <span class="time-num">7 MIN</span>
+                  <span class="time-type">WALK</span>
+                </div>
+              </div>
+
+              <div class="dir-item" data-category="parks">
+                <div class="dir-item-left">
+                  <span class="dir-category-tag">GREEN SANCTUARIES</span>
+                  <h3 class="dir-name">Jardins des Champs-Élysées</h3>
+                  <p class="dir-desc">Historic manicured tree-lined allées, stone fountains, and pavilion paths.</p>
+                </div>
+                <div class="dir-item-time">
+                  <span class="time-num">4 MIN</span>
+                  <span class="time-type">WALK</span>
+                </div>
+              </div>
+
+              <div class="dir-item" data-category="parks">
+                <div class="dir-item-left">
+                  <span class="dir-category-tag">GREEN SANCTUARIES</span>
+                  <h3 class="dir-name">Parc Monceau</h3>
+                  <p class="dir-desc">Romantic 18th-century English-style park with Corinthian colonnade.</p>
+                </div>
+                <div class="dir-item-time">
+                  <span class="time-num">12 MIN</span>
+                  <span class="time-type">WALK</span>
+                </div>
+              </div>
+
+              <div class="dir-item" data-category="parks">
+                <div class="dir-item-left">
+                  <span class="dir-category-tag">PRIVATE AVIATION</span>
+                  <h3 class="dir-name">Paris Le Bourget VIP Terminal</h3>
+                  <p class="dir-desc">Premier European business aviation center with discreet private tarmac handling.</p>
+                </div>
+                <div class="dir-item-time">
+                  <span class="time-num">25 MIN</span>
+                  <span class="time-type">CHAUFFEUR</span>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 9. FLOOR PLANS AND PROPERTY DETAILS -->
+    <!-- ========================================================================= -->
+    <section id="floorplans" class="section floorplans-section" aria-labelledby="floorplansTitle">
+      <div class="section-container">
+        
+        <!-- Section Marker -->
+        <div class="section-marker">
+          <span class="marker-number">06</span>
+          <span class="marker-rule"></span>
+          <span class="marker-title">ARCHITECTURAL BLUEPRINTS</span>
+        </div>
+
+        <div class="floorplans-header reveal-on-scroll">
+          <div>
+            <span class="editorial-kicker">SPATIAL DISTRIBUTION</span>
+            <h2 id="floorplansTitle" class="editorial-headline">
+              Plans &amp; Layouts.
+            </h2>
+            <p class="body-lead max-w-2xl">
+              Examine the fluid architectural transitions between grand public reception rooms and secluded private penthouse suites.
+            </p>
+          </div>
+
+          <!-- Floor Level Selector Tabs -->
+          <div class="level-selector-tabs" role="tablist" aria-label="Floor plan level selection">
+            <button class="level-tab active" data-level="1" role="tab" aria-selected="true">
+              <span class="level-num">LEVEL 01</span>
+              <span class="level-desc">Grand Reception &amp; Guest Suites (420 m²)</span>
+            </button>
+            <button class="level-tab" data-level="2" role="tab" aria-selected="false">
+              <span class="level-num">LEVEL 02</span>
+              <span class="level-desc">Master Penthouse &amp; Sky Terrace (260 m² + 240 m²)</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Interactive Blueprint Viewer & Room Inspector -->
+        <div class="blueprint-workspace reveal-on-scroll delay-1">
+          
+          <!-- Blueprint Vector Stage -->
+          <div class="blueprint-stage">
+            <div class="blueprint-controls">
+              <span class="blueprint-status-indicator">
+                <span class="pulse-dot"></span>
+                <span id="activeFloorLabel">LEVEL 01 · RECEPTION &amp; SUITES</span>
+              </span>
+              <span class="blueprint-hint">Hover or tap rooms &amp; pins to inspect specifications</span>
+            </div>
+
+            <div class="blueprint-viewport" id="blueprintViewport">
+              <!-- Level 01 SVG -->
+              <div id="planLevel1" class="plan-layer active">
+                <img src="/images/floorplan-level1.svg" alt="Level 01 Architectural CAD Floor Plan" class="cad-svg">
+              </div>
+              <!-- Level 02 SVG -->
+              <div id="planLevel2" class="plan-layer">
+                <img src="/images/floorplan-level2.svg" alt="Level 02 Master Penthouse and Sky Terrace Floor Plan" class="cad-svg">
+              </div>
+            </div>
+
+            <!-- Blueprint Footer Meta -->
+            <div class="blueprint-meta-bar">
+              <div class="meta-item">
+                <span class="meta-label">ORIENTATION</span>
+                <span class="meta-val">Dual South / South-West</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">ACOUSTIC RATING</span>
+                <span class="meta-val">Rw + Ctr = 48 dB</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">ENERGY CERTIFICATION</span>
+                <span class="meta-val">BREEAM Excellent (Class A)</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">CEILING CLEARANCE</span>
+                <span class="meta-val">3.40 m – 4.10 m</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Room Inspector & Live Specification Card -->
+          <div class="room-inspector-panel">
+            <div class="inspector-card-header">
+              <span class="inspector-badge">ROOM SPECIFICATION</span>
+              <h3 id="inspectorRoomTitle" class="inspector-title">Grand Salon &amp; Living Gallery</h3>
+              <p id="inspectorRoomArea" class="inspector-area">14.20m × 8.80m · 125 m² (1,345 sq ft)</p>
+            </div>
+
+            <div class="inspector-card-body">
+              <div class="spec-row">
+                <span class="spec-k">Finishes</span>
+                <span id="inspectorFinishes" class="spec-v">Honed Roman Travertine, Quarter-sawn White Oak</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-k">Ceiling</span>
+                <span id="inspectorCeiling" class="spec-v">3.40m with concealed cove ambient wash</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-k">Glazing</span>
+                <span id="inspectorGlazing" class="spec-v">Schuco Triple-Glazed Acoustic Panoramic Facade</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-k">Key Feature</span>
+                <span id="inspectorFeature" class="spec-v">Carved Travertine Fireplace with ethanol clean burner</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-k">Exposure</span>
+                <span id="inspectorExposure" class="spec-v">South &amp; South-West (Golden Hour light)</span>
+              </div>
+            </div>
+
+            <div class="inspector-card-actions">
+              <button id="downloadBrochureBtn" class="btn btn-outline-dark w-full" type="button">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" class="mr-2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                <span>DOWNLOAD ARCHITECTURAL DOSSIER</span>
+              </button>
+              <p class="download-caption">Includes full CAD vector elevations, technical specifications &amp; material schedule (PDF).</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Dossier / Spec Sheet Modal -->
+    <div id="dossierModal" class="dossier-modal" role="dialog" aria-modal="true" aria-label="Architectural Dossier" aria-hidden="true">
+      <div class="dossier-backdrop"></div>
+      <div class="dossier-dialog">
+        <div class="dossier-header">
+          <div>
+            <span class="brand-wordmark">MAISON ÉLYSÉE</span>
+            <h2 class="dossier-title">Architectural Specification Dossier</h2>
+          </div>
+          <button id="dossierCloseBtn" class="dossier-close-btn" aria-label="Close dossier">&times;</button>
+        </div>
+
+        <div class="dossier-content">
+          <div class="dossier-summary-box">
+            <div class="summary-line"><strong>Property:</strong> MAISON ÉLYSÉE Duplex Penthouse</div>
+            <div class="summary-line"><strong>Address:</strong> 18 Avenue Montaigne Adjacency, 75008 Paris</div>
+            <div class="summary-line"><strong>Gross Interior Area:</strong> 680 m² (7,320 sq ft)</div>
+            <div class="summary-line"><strong>Landscaped Sky Terrace:</strong> 240 m² (2,583 sq ft)</div>
+            <div class="summary-line"><strong>Bedrooms:</strong> 5 En-Suite Master Suites</div>
+            <div class="summary-line"><strong>Demonstration Asking Price:</strong> €24,500,000 EUR</div>
+          </div>
+
+          <h3 class="dossier-section-h">Complete Material Schedule</h3>
+          <ul class="dossier-materials-list">
+            <li><strong>Natural Stone:</strong> Honed Roman Travertine (Tivoli), Bookmatched Calacatta Borghini, Fior di Bosco Grigio.</li>
+            <li><strong>Flooring:</strong> 240mm wide-plank European white oak by Schotten &amp; Hansen with acoustic elastomer backing.</li>
+            <li><strong>Joinery:</strong> Custom millwork finished in smoked oak, hand-stitched leather panels, and patinated bronze reveals.</li>
+            <li><strong>Kitchen Systems:</strong> Boffi bespoke modular series with integrated Gaggenau 400 Series induction and steam combi-ovens.</li>
+            <li><strong>Climate:</strong> Geothermal radiant subfloor heating + four-pipe silent VRF climate control with museum-grade HEPA filters.</li>
+            <li><strong>Private Security:</strong> Biometric facial recognition lift access, encrypted alarm system, secured 3-bay private garage.</li>
+          </ul>
+
+          <div class="dossier-actions-row">
+            <button id="printDossierBtn" class="btn btn-primary" type="button">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" class="mr-2"><path d="M6 9V2h12v7M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+              PRINT / SAVE DOSSIER AS PDF
+            </button>
+            <a href="#viewing" id="dossierViewingBtn" class="btn btn-outline-dark">
+              REQUEST PRIVATE VIEWING
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========================================================================= -->
+    <!-- 10. PRIVATE VIEWING REQUEST FORM -->
+    <!-- ========================================================================= -->
+    <section id="viewing" class="section viewing-section" aria-labelledby="viewingTitle">
+      <div class="section-container">
+        
+        <!-- Section Marker -->
+        <div class="section-marker">
+          <span class="marker-number">07</span>
+          <span class="marker-rule"></span>
+          <span class="marker-title">PRIVATE APPOINTMENT</span>
+        </div>
+
+        <div class="viewing-layout-grid">
+          
+          <!-- Left Column: Private Client Advisor & Viewing Protocols -->
+          <div class="viewing-advisor-col reveal-on-scroll">
+            <span class="editorial-kicker">BY CONFIDENTIAL APPOINTMENT</span>
+            <h2 id="viewingTitle" class="editorial-headline">
+              Experience It in Person.
+            </h2>
+            <p class="body-lead">
+              Arrange a private viewing and discover every detail of the residence with our property specialist.
+            </p>
+
+            <!-- Advisor Presentation Card -->
+            <div class="advisor-card">
+              <div class="advisor-header">
+                <div class="advisor-monogram">HM</div>
+                <div>
+                  <h3 class="advisor-name">Henri de Montmirail</h3>
+                  <p class="advisor-role">Private Client Director · Paris Acquisitions</p>
+                </div>
+              </div>
+
+              <div class="advisor-details">
+                <div class="advisor-contact-item">
+                  <span class="contact-icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                  </span>
+                  <div>
+                    <span class="contact-lbl">Direct Private Line</span>
+                    <a href="tel:+33142685018" class="contact-val">+33 (0)1 42 68 50 18</a>
+                  </div>
+                </div>
+
+                <div class="advisor-contact-item">
+                  <span class="contact-icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                  </span>
+                  <div>
+                    <span class="contact-lbl">Confidential Inquiries</span>
+                    <a href="mailto:private.viewings@maisonelysee.com" class="contact-val">private.viewings@maisonelysee.com</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Protocols Checklist -->
+              <div class="viewing-protocols">
+                <span class="protocols-title">PRIVATE VIEWING PROTOCOLS</span>
+                <ul class="protocols-list">
+                  <li>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>Exclusively individual 75-minute private walkthrough</span>
+                  </li>
+                  <li>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>Complimentary private chauffeured transfer available</span>
+                  </li>
+                  <li>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>Discretion &amp; Non-Disclosure Agreement provided upon request</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Viewing Request Form & Confirmation Screen -->
+          <div class="viewing-form-col reveal-on-scroll delay-1">
+            
+            <div class="form-container-card">
+              
+              <!-- Form Element -->
+              <form id="viewingForm" class="viewing-form" novalidate>
+                
+                <div class="form-row two-cols">
+                  <div class="form-group" id="groupFullName">
+                    <label for="fullName" class="form-label">
+                      Full Name <span class="required-star">*</span>
+                    </label>
+                    <input 
+                      type="text" 
+                      id="fullName" 
+                      name="fullName" 
+                      class="form-control" 
+                      placeholder="e.g. Jean-Luc Delacroix" 
+                      required
+                      autocomplete="name"
+                    >
+                    <span class="form-error-msg" id="errorFullName">Please enter your full name.</span>
+                  </div>
+
+                  <div class="form-group" id="groupEmail">
+                    <label for="emailAddress" class="form-label">
+                      Email Address <span class="required-star">*</span>
+                    </label>
+                    <input 
+                      type="email" 
+                      id="emailAddress" 
+                      name="email" 
+                      class="form-control" 
+                      placeholder="e.g. delacroix@domain.com" 
+                      required
+                      autocomplete="email"
+                    >
+                    <span class="form-error-msg" id="errorEmail">Please enter a valid email address.</span>
+                  </div>
+                </div>
+
+                <div class="form-row two-cols">
+                  <div class="form-group" id="groupPhone">
+                    <label for="phoneNumber" class="form-label">
+                      Phone Number with Country Code <span class="required-star">*</span>
+                    </label>
+                    <div class="phone-input-wrap">
+                      <select id="countryCode" name="countryCode" class="form-select phone-code-select" aria-label="Country Code">
+                        <option value="+33">🇫🇷 +33 (FR)</option>
+                        <option value="+1">🇺🇸 +1 (US/CA)</option>
+                        <option value="+44">🇬🇧 +44 (UK)</option>
+                        <option value="+41">🇨🇭 +41 (CH)</option>
+                        <option value="+971">🇦🇪 +971 (UAE)</option>
+                        <option value="+49">🇩🇪 +49 (DE)</option>
+                        <option value="+39">🇮🇹 +39 (IT)</option>
+                        <option value="+377">🇲🇨 +377 (MC)</option>
+                        <option value="+65">🇸🇬 +65 (SG)</option>
+                        <option value="+81">🇯🇵 +81 (JP)</option>
+                      </select>
+                      <input 
+                        type="tel" 
+                        id="phoneNumber" 
+                        name="phoneNumber" 
+                        class="form-control phone-number-input" 
+                        placeholder="6 12 34 56 78" 
+                        required
+                        autocomplete="tel"
+                      >
+                    </div>
+                    <span class="form-error-msg" id="errorPhone">Please enter your contact phone number.</span>
+                  </div>
+
+                  <div class="form-group" id="groupVisitors">
+                    <label for="numVisitors" class="form-label">
+                      Number of Visitors <span class="required-star">*</span>
+                    </label>
+                    <select id="numVisitors" name="numVisitors" class="form-select" required>
+                      <option value="1">1 Guest (Private Walkthrough)</option>
+                      <option value="2" selected>2 Guests</option>
+                      <option value="3">3 Guests</option>
+                      <option value="4+">4 or More Guests (Family / Advisors)</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-row two-cols">
+                  <div class="form-group" id="groupDate">
+                    <label for="preferredDate" class="form-label">
+                      Preferred Viewing Date <span class="required-star">*</span>
+                    </label>
+                    <input 
+                      type="date" 
+                      id="preferredDate" 
+                      name="preferredDate" 
+                      class="form-control" 
+                      required
+                    >
+                    <span class="form-error-msg" id="errorDate">Please select a preferred viewing date.</span>
+                  </div>
+
+                  <div class="form-group" id="groupTime">
+                    <label for="preferredTime" class="form-label">
+                      Preferred Time Slot <span class="required-star">*</span>
+                    </label>
+                    <select id="preferredTime" name="preferredTime" class="form-select" required>
+                      <option value="10:00 - 11:30">Morning (10:00 – 11:30)</option>
+                      <option value="14:00 - 15:30" selected>Afternoon (14:00 – 15:30)</option>
+                      <option value="17:30 - 19:00">Golden Hour / Sunset (17:30 – 19:00)</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="specialRequests" class="form-label">
+                    Optional Special Requests or Specific Interests
+                  </label>
+                  <textarea 
+                    id="specialRequests" 
+                    name="specialRequests" 
+                    class="form-control form-textarea" 
+                    rows="3" 
+                    placeholder="e.g. Chauffeur pickup required from Plaza Athénée, interest in art hanging specifications or private wine collection volume..."
+                  ></textarea>
+                </div>
+
+                <!-- Consent Checkbox -->
+                <div class="form-group" id="groupConsent">
+                  <label class="checkbox-container">
+                    <input type="checkbox" id="privacyConsent" name="privacyConsent" required>
+                    <span class="checkmark"></span>
+                    <span class="checkbox-label-text">
+                      I agree to the processing of my contact details by the MAISON ÉLYSÉE Private Client Office in accordance with our <a href="#privacyModalTrigger" id="privacyLink" class="text-link">Privacy Policy</a>. All communications remain strictly confidential. <span class="required-star">*</span>
+                    </span>
+                  </label>
+                  <span class="form-error-msg" id="errorConsent">You must accept the privacy policy to submit a viewing request.</span>
+                </div>
+
+                <!-- Submit Button with Loading State -->
+                <button type="submit" id="submitViewingBtn" class="btn btn-primary btn-submit w-full">
+                  <span class="btn-text">REQUEST MY PRIVATE VIEWING</span>
+                  <span class="btn-spinner" aria-hidden="true">
+                    <svg class="animate-spin" width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="3" stroke-dasharray="32" stroke-linecap="round"/></svg>
+                  </span>
+                </button>
+
+                <p class="form-disclaimer">
+                  An acquisition director will confirm your appointment via private phone or encrypted email within 4 business hours.
+                </p>
+
+              </form>
+
+              <!-- Refined Success Confirmation Screen (Appears on successful submission) -->
+              <div id="viewingSuccessCard" class="viewing-success-card" aria-live="polite" style="display: none;">
+                <div class="success-icon-wrap">
+                  <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+
+                <span class="success-kicker">APPOINTMENT RESERVED</span>
+                <h3 class="success-title">Your Private Viewing Has Been Requested.</h3>
+                <p class="success-desc">
+                  Thank you, <span id="confirmedClientName" class="font-semibold">Monsieur</span>. Your reservation has been transmitted directly to Henri de Montmirail at the Private Client Desk.
+                </p>
+
+                <!-- Appointment Summary Ticket -->
+                <div class="appointment-ticket">
+                  <div class="ticket-header">
+                    <span class="ticket-brand">MAISON ÉLYSÉE</span>
+                    <span class="ticket-ref" id="confirmedRefCode">REF: ME-2026-8842</span>
+                  </div>
+                  <div class="ticket-grid">
+                    <div class="ticket-item">
+                      <span class="ticket-label">DATE</span>
+                      <span class="ticket-val" id="confirmedDate">Thursday, 15 October 2026</span>
+                    </div>
+                    <div class="ticket-item">
+                      <span class="ticket-label">TIME SLOT</span>
+                      <span class="ticket-val" id="confirmedTime">14:00 – 15:30 CET</span>
+                    </div>
+                    <div class="ticket-item">
+                      <span class="ticket-label">VISITORS</span>
+                      <span class="ticket-val" id="confirmedVisitors">2 Guests</span>
+                    </div>
+                    <div class="ticket-item">
+                      <span class="ticket-label">LOCATION</span>
+                      <span class="ticket-val">Paris VIII · Golden Triangle</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Interactive Actions: Add to Calendar (.ics) & Reset -->
+                <div class="success-actions-group">
+                  <button id="downloadIcsBtn" class="btn btn-primary" type="button">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" class="mr-2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                    ADD TO CALENDAR (.ICS)
+                  </button>
+                  <button id="resetFormBtn" class="btn btn-outline-dark" type="button">
+                    SUBMIT ANOTHER INQUIRY
+                  </button>
+                </div>
+
+                <p class="ticket-footnote">
+                  A formal concierge confirmation will be sent to your provided email address.
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 11. FINAL CALL TO ACTION -->
+    <!-- ========================================================================= -->
+    <section class="closing-cta-section" aria-label="Final Invitation">
+      <div class="closing-media-wrap">
+        <img 
+          src="/images/cta-closing.jpg" 
+          alt="Atmospheric twilight architectural view of Maison Élysée glowing warmly under Parisian evening skies"
+          class="closing-img"
+          loading="lazy"
+          width="2400"
+          height="1350"
+        >
+        <div class="closing-overlay" aria-hidden="true"></div>
+      </div>
+
+      <div class="closing-content-container reveal-on-scroll">
+        <span class="closing-eyebrow">A RARE PERSPECTIVE</span>
+        <h2 class="closing-headline">
+          Some Places Simply Feel Different.
+        </h2>
+        <p class="closing-sub">
+          Discover a residence designed for a life well lived.
+        </p>
+        <a href="#viewing" class="btn btn-hero-primary" id="closingViewingBtn">
+          <span>ARRANGE A PRIVATE VIEWING</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" class="btn-arrow" aria-hidden="true"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================================= -->
+  <!-- 12. FOOTER -->
+  <!-- ========================================================================= -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-container">
+      
+      <!-- Top Row: Brand & Statement -->
+      <div class="footer-top-grid">
+        <div class="footer-brand-col">
+          <span class="footer-wordmark">MAISON ÉLYSÉE</span>
+          <span class="footer-tagline">RÉSIDENCE PRIVÉE · PARIS VIII</span>
+          <p class="footer-statement">
+            MAISON ÉLYSÉE represents an uncompromising standard in European residential architecture, where timeless proportions meet contemporary serenity.
+          </p>
+          <div class="footer-social-links">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Follow Maison Élysée on Instagram">Instagram</a>
+            <span class="social-sep">/</span>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Follow Maison Élysée on LinkedIn">LinkedIn</a>
+            <span class="social-sep">/</span>
+            <a href="https://architecturaldigest.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Architectural Digest Feature">Architectural Digest</a>
+          </div>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4 class="footer-heading">THE RESIDENCE</h4>
+          <ul class="footer-links">
+            <li><a href="#overview">Introduction &amp; Concept</a></li>
+            <li><a href="#architecture">Architectural Philosophy</a></li>
+            <li><a href="#gallery">Curated Gallery</a></li>
+            <li><a href="#amenities">Specifications &amp; Amenities</a></li>
+            <li><a href="#floorplans">Floor Plans &amp; Blueprints</a></li>
+            <li><a href="#location">Neighborhood Directory</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4 class="footer-heading">PRIVATE CLIENT DESK</h4>
+          <ul class="footer-links">
+            <li><a href="#viewing">Arrange Private Viewing</a></li>
+            <li><a href="tel:+33142685018">+33 (0)1 42 68 50 18</a></li>
+            <li><a href="mailto:private@maisonelysee.com">private@maisonelysee.com</a></li>
+            <li><span class="text-muted">18 Avenue Montaigne Adjacency</span></li>
+            <li><span class="text-muted">75008 Paris, France</span></li>
+            <li><span class="text-muted">Hours: Mon – Sat 09:00 – 19:30</span></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4 class="footer-heading">LEGAL &amp; DISCLOSURES</h4>
+          <ul class="footer-links">
+            <li><a href="#privacyPolicy" id="footerPrivacyLink">Privacy Policy &amp; GDPR</a></li>
+            <li><a href="#legalNotices" id="footerLegalLink">Legal Notices</a></li>
+            <li><a href="#cookiePreferences" id="footerCookieLink">Cookie Preferences</a></li>
+            <li><a href="#antiMoneyLaundering" id="footerAmlLink">AML / Financial Compliance</a></li>
+            <li><a href="#credits" id="footerCreditsLink">Architecture Credits</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Divider -->
+      <div class="footer-divider"></div>
+
+      <!-- Bottom Row: Copyright & Disclaimers -->
+      <div class="footer-bottom-row">
+        <p class="copyright-text">
+          &copy; 2026 MAISON ÉLYSÉE. All rights reserved. Demonstrated portfolio presentation.
+        </p>
+        <p class="demonstration-notice">
+          All architectural imagery, plans, and metrics are presented for high-end residential demonstration purposes. Private consultations conducted under customary confidentiality agreements.
+        </p>
+        <button id="backToTopBtn" class="back-to-top-btn" aria-label="Scroll back to top">
+          <span>BACK TO TOP</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+        </button>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Privacy Policy Modal -->
+  <div id="privacyModal" class="dossier-modal" role="dialog" aria-modal="true" aria-label="Privacy Policy" aria-hidden="true">
+    <div class="dossier-backdrop"></div>
+    <div class="dossier-dialog">
+      <div class="dossier-header">
+        <div>
+          <span class="brand-wordmark">MAISON ÉLYSÉE</span>
+          <h2 class="dossier-title">Privacy Policy &amp; Data Protection</h2>
+        </div>
+        <button id="privacyCloseBtn" class="dossier-close-btn" aria-label="Close privacy modal">&times;</button>
+      </div>
+      <div class="dossier-content">
+        <p class="body-text mb-4">
+          At MAISON ÉLYSÉE, your privacy and discretion are paramount. In accordance with the EU General Data Protection Regulation (GDPR), any contact information provided through this portal is utilized strictly for coordinating private property consultations and architectural viewings.
+        </p>
+        <h4 class="font-bold text-charcoal mb-2">1. Data Controller</h4>
+        <p class="body-text mb-4">MAISON ÉLYSÉE Private Acquisitions Office, 18 Avenue Montaigne Adjacency, 75008 Paris, France.</p>
+        <h4 class="font-bold text-charcoal mb-2">2. Confidentiality &amp; Security</h4>
+        <p class="body-text mb-4">We do not share, sell, or disclose client information to third-party marketing brokers. All data is encrypted via TLS 1.3 in transit and stored in protected EU sovereign servers.</p>
+        <h4 class="font-bold text-charcoal mb-2">3. Your Rights</h4>
+        <p class="body-text">You have the right to request access, rectification, or complete deletion of your records at any time by contacting <a href="mailto:dpo@maisonelysee.com" class="text-bronze underline">dpo@maisonelysee.com</a>.</p>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
