@@ -61,8 +61,8 @@
     }
   }
   </script>
-  <script type="module" crossorigin src="/assets/index-QUzZ3vP1.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-C_13uITh.css">
+  <script type="module" crossorigin src="/assets/index-e-eVutfS.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-BWU0XY1w.css">
 </head>
 <body class="bg-primary text-charcoal font-sans antialiased selection:bg-bronze selection:text-white">
 
@@ -71,22 +71,6 @@
 
   <!-- Accessibility Skip Link -->
   <a href="#overview" class="skip-link">Skip to main content</a>
-
-  <!-- Floating Utility Preferences (Currency & Metric) -->
-  <aside class="quick-prefs-dock" aria-label="Regional display preferences">
-    <div class="pref-group">
-      <span class="pref-label">CURRENCY</span>
-      <button type="button" class="pref-btn active" data-currency-set="EUR" title="Display in Euros">EUR (€)</button>
-      <button type="button" class="pref-btn" data-currency-set="USD" title="Display in US Dollars">USD ($)</button>
-      <button type="button" class="pref-btn" data-currency-set="GBP" title="Display in British Pounds">GBP (£)</button>
-    </div>
-    <div class="pref-divider"></div>
-    <div class="pref-group">
-      <span class="pref-label">UNITS</span>
-      <button type="button" class="pref-btn active" data-unit-set="m2" title="Square Meters">M²</button>
-      <button type="button" class="pref-btn" data-unit-set="sqft" title="Square Feet">SQ FT</button>
-    </div>
-  </aside>
 
   <!-- ========================================================================= -->
   <!-- HEADER & NAVIGATION -->
@@ -127,6 +111,22 @@
 
     </div>
   </header>
+
+  <!-- Floating Utility Preferences (Currency & Metric) -->
+  <aside id="quickPrefsDock" class="quick-prefs-dock" aria-label="Regional display preferences">
+    <div class="pref-group" role="group" aria-label="Currency selection">
+      <span class="pref-label">CURRENCY</span>
+      <button type="button" class="pref-btn active" data-currency-set="EUR" title="Display in Euros" aria-pressed="true">EUR (€)</button>
+      <button type="button" class="pref-btn" data-currency-set="USD" title="Display in US Dollars" aria-pressed="false">USD ($)</button>
+      <button type="button" class="pref-btn" data-currency-set="GBP" title="Display in British Pounds" aria-pressed="false">GBP (£)</button>
+    </div>
+    <div class="pref-divider" aria-hidden="true"></div>
+    <div class="pref-group" role="group" aria-label="Area unit selection">
+      <span class="pref-label">UNITS</span>
+      <button type="button" class="pref-btn active" data-unit-set="m2" title="Square Meters" aria-pressed="true">M²</button>
+      <button type="button" class="pref-btn" data-unit-set="sqft" title="Square Feet" aria-pressed="false">SQ FT</button>
+    </div>
+  </aside>
 
   <!-- Mobile Fullscreen Navigation Drawer -->
   <div id="mobileDrawer" class="mobile-drawer" aria-hidden="true">
@@ -317,7 +317,7 @@
           <div class="info-strip-card highlight-price">
             <span class="strip-label">DEMONSTRATION OFFERING</span>
             <span class="strip-value price-display" data-price-text>€24,500,000</span>
-            <span class="strip-sub">Price Upon Private Application</span>
+            <span class="strip-sub" data-price-sub>Price Upon Private Application</span>
           </div>
         </div>
 
@@ -1155,10 +1155,10 @@
           <div class="dossier-summary-box">
             <div class="summary-line"><strong>Property:</strong> MAISON ÉLYSÉE Duplex Penthouse</div>
             <div class="summary-line"><strong>Address:</strong> 18 Avenue Montaigne Adjacency, 75008 Paris</div>
-            <div class="summary-line"><strong>Gross Interior Area:</strong> 680 m² (7,320 sq ft)</div>
-            <div class="summary-line"><strong>Landscaped Sky Terrace:</strong> 240 m² (2,583 sq ft)</div>
+            <div class="summary-line"><strong>Gross Interior Area:</strong> <span data-dossier-interior>680 m² (7,320 sq ft)</span></div>
+            <div class="summary-line"><strong>Landscaped Sky Terrace:</strong> <span data-dossier-terrace>240 m² (2,583 sq ft)</span></div>
             <div class="summary-line"><strong>Bedrooms:</strong> 5 En-Suite Master Suites</div>
-            <div class="summary-line"><strong>Demonstration Asking Price:</strong> €24,500,000 EUR</div>
+            <div class="summary-line"><strong>Demonstration Asking Price:</strong> <span data-dossier-price>€24,500,000 EUR</span></div>
           </div>
 
           <h3 class="dossier-section-h">Complete Material Schedule</h3>

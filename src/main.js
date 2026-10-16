@@ -72,17 +72,33 @@ document.addEventListener('DOMContentLoaded', () => {
   const unitBtns = document.querySelectorAll('[data-unit-set]');
 
   const priceElements = document.querySelectorAll('[data-price-text]');
+  const priceSubElements = document.querySelectorAll('[data-price-sub]');
   const interiorElements = document.querySelectorAll('[data-unit-text="interior"]');
   const interiorAltElements = document.querySelectorAll('[data-unit-alt="interior"]');
   const terraceElements = document.querySelectorAll('[data-unit-text="terrace"]');
   const terraceAltElements = document.querySelectorAll('[data-unit-alt="terrace"]');
   const heroInteriorVal = document.querySelector('[data-unit-val="interior"]');
   const heroTerraceVal = document.querySelector('[data-unit-val="terrace"]');
+  const dossierPrice = document.querySelector('[data-dossier-price]');
+  const dossierInterior = document.querySelector('[data-dossier-interior]');
+  const dossierTerrace = document.querySelector('[data-dossier-terrace]');
 
   const currencyData = {
-    EUR: { price: '€24,500,000', sub: 'Price Upon Private Application' },
-    USD: { price: '$26,800,000', sub: 'USD Equivalent (Demonstration)' },
-    GBP: { price: '£21,200,000', sub: 'GBP Equivalent (Demonstration)' }
+    EUR: { 
+      price: '€24,500,000', 
+      sub: 'Price Upon Private Application',
+      dossier: '€24,500,000 EUR'
+    },
+    USD: { 
+      price: '$26,800,000', 
+      sub: 'USD Equivalent (Demonstration)',
+      dossier: '$26,800,000 USD'
+    },
+    GBP: { 
+      price: '£21,200,000', 
+      sub: 'GBP Equivalent (Demonstration)',
+      dossier: '£21,200,000 GBP'
+    }
   };
 
   const unitData = {
@@ -92,7 +108,9 @@ document.addEventListener('DOMContentLoaded', () => {
       terrace: '240 m²',
       terraceAlt: 'Private Sky Terrace & Pool',
       heroInterior: '680 M²',
-      heroTerrace: '240 M² SKY TERRACE'
+      heroTerrace: '240 M² SKY TERRACE',
+      dossierInterior: '680 m² (7,320 sq ft)',
+      dossierTerrace: '240 m² (2,583 sq ft)'
     },
     sqft: {
       interior: '7,320 sq ft',
@@ -100,40 +118,84 @@ document.addEventListener('DOMContentLoaded', () => {
       terrace: '2,583 sq ft',
       terraceAlt: '240 m² Sky Terrace & Pool',
       heroInterior: '7,320 SQ FT',
-      heroTerrace: '2,583 SQ FT SKY TERRACE'
+      heroTerrace: '2,583 SQ FT SKY TERRACE',
+      dossierInterior: '7,320 sq ft (680 m²)',
+      dossierTerrace: '2,583 sq ft (240 m²)'
     }
   };
 
-  currencyBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const curr = btn.getAttribute('data-currency-set');
-      currencyBtns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
+  function setCurrency(curr) {
+    if (!currencyData[curr]) return;
+    currencyBtns.forEach(b => {
+      const isActive = b.getAttribute('data-currency-set') === curr;
+      b.classList.toggle('active', isActive);
+      b.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+    });
 
-      if (currencyData[curr]) {
-        priceElements.forEach(el => {
-          el.textContent = currencyData[curr].price;
-        });
-      }
+    priceElements.forEach(el => {
+      el.textContent = currencyData[curr].price;
+    });
+
+    priceSubElements.forEach(el => {
+      el.textContent = currencyData[curr].sub;
+    });
+
+    if (dossierPrice) {
+      dossierPrice.textContent = currencyData[curr].dossier;
+    }
+
+    try {
+      localStorage.setItem('maison_elysee_curr', curr);
+    } catch (_) {}
+  }
+
+  function setUnits(u) {
+    if (!unitData[u]) return;
+    unitBtns.forEach(b => {
+      const isActive = b.getAttribute('data-unit-set') === u;
+      b.classList.toggle('active', isActive);
+      b.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+    });
+
+    interiorElements.forEach(el => { el.textContent = unitData[u].interior; });
+    interiorAltElements.forEach(el => { el.textContent = unitData[u].interiorAlt; });
+    terraceElements.forEach(el => { el.textContent = unitData[u].terrace; });
+    terraceAltElements.forEach(el => { el.textContent = unitData[u].terraceAlt; });
+    if (heroInteriorVal) heroInteriorVal.textContent = unitData[u].heroInterior;
+    if (heroTerraceVal) heroTerraceVal.textContent = unitData[u].heroTerrace;
+
+    if (dossierInterior) dossierInterior.textContent = unitData[u].dossierInterior;
+    if (dossierTerrace) dossierTerrace.textContent = unitData[u].dossierTerrace;
+
+    try {
+      localStorage.setItem('maison_elysee_unit', u);
+    } catch (_) {}
+  }
+
+  currencyBtns.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const curr = btn.getAttribute('data-currency-set');
+      setCurrency(curr);
     });
   });
 
   unitBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
       const u = btn.getAttribute('data-unit-set');
-      unitBtns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-
-      if (unitData[u]) {
-        interiorElements.forEach(el => el.textContent = unitData[u].interior);
-        interiorAltElements.forEach(el => el.textContent = unitData[u].interiorAlt);
-        terraceElements.forEach(el => el.textContent = unitData[u].terrace);
-        terraceAltElements.forEach(el => el.textContent = unitData[u].terraceAlt);
-        if (heroInteriorVal) heroInteriorVal.textContent = unitData[u].heroInterior;
-        if (heroTerraceVal) heroTerraceVal.textContent = unitData[u].heroTerrace;
-      }
+      setUnits(u);
     });
   });
+
+  // Restore saved preferences if any
+  try {
+    const savedCurr = localStorage.getItem('maison_elysee_curr');
+    if (savedCurr && currencyData[savedCurr]) setCurrency(savedCurr);
+
+    const savedUnit = localStorage.getItem('maison_elysee_unit');
+    if (savedUnit && unitData[savedUnit]) setUnits(savedUnit);
+  } catch (_) {}
 
   // =========================================================================
   // 4. PHOTO GALLERY & FULLSCREEN LIGHTBOX
